@@ -1,0 +1,14 @@
+{
+  "BUTTON_LANG_EN": "English",
+  "BUTTON_LANG_PT": "Portuguese",
+  "gameSubmitButton": "Submit",
+  "recognize": "Recognize",
+  "playerName":"Insert Player Name:",
+  "welcome": "Welcome,",
+  "invitation": "Let's learn a new language?",
+  "pressButton": "Press the button below.",
+  "instructions": "Click this button and then say the name of this image in italian!",
+  "result": "Your result will apppear in this box!",
+  "spoilerButton": "Spoiler",
+  "Pronounciation": "Pronounciation:"
+}

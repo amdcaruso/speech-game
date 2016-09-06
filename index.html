@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="TCC">
+
+<head>
+  <script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link data-require="bootstrap@*" data-semver="4.0.0-alpha.2" rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+  <script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-cookies.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.10.0/angular-translate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-interpolation-messageformat/2.10.0/angular-translate-interpolation-messageformat.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.10.0/angular-translate-storage-cookie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.10.0/angular-translate-storage-local.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-url/2.10.0/angular-translate-loader-url.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.10.0/angular-translate-loader-static-files.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-handler-log/2.10.0/angular-translate-handler-log.js"></script>
+  <script src="game.module.js"></script>
+  <script src="game.controller.js"></script>
+  <script src="game.factory.js"></script>
+  <link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+  <!--NavBar-->
+  <!--Make separate controller for navbar-->
+  <div ng-controller="MainController as vm"> 
+    <nav class="navbar navbar-light bg-faded">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active"></li>
+        <li>
+          <a ng-click="vm.changeLanguage('pt')">
+            <input class="languageProperty" type="image" src="http://img.freeflagicons.com/thumb/round_icon/brazil/brazil_640.png" translate="BUTTON_LANG_PT" /> Portuguese
+          </a>
+        </li>
+        <li>
+          <a ng-click="vm.changeLanguage('en')">
+            <input type="image" class="languageProperty" src="http://img.freeflagicons.com/thumb/round_icon/united_kingdom/united_kingdom_640.png" translate="BUTTON_LANG_EN" /> English
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--NavBar-->
+    <div ng-view></div>
+  </div>
+</body>
+
+</html>

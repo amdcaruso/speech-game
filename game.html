@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<div ng-app="TCC">
+  <div ng-controller="MainController as vm">
+    <div align="center">
+      <div><img id="ImgRec" src="http://www.sceltaresponsabile.it/images/articles/205-205-mela-rossa.jpg" width="150px" height="150px" /></div>
+      <div></div>
+      <h5>{{'instructions' | translate}}</h5>
+      <button class="btn btn-success" id="RecognizeButton">{{'recognize' | translate}}</button>
+      <h5>{{'pressButton' | translate}}</h5>
+      <input id="result" type="text" />
+      <div>
+        <button class="btn btn-danger" ng-click="vm.showAnswer = !vm.showAnswer">{{'spoilerButton' | translate}}</button>
+      </div>
+      <div ng-show="!vm.showAnswer">{{'pronunciation' | translate}}: /ˈmelɑ/</div>
+
+      <img class="PlayerImage" id="PlayerImage"/>
+    </div>
+  </div>
+</div>
+
+</html>

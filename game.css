@@ -1,0 +1,38 @@
+
+body{
+   /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #003973, #E5E5BE);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #003973, #E5E5BE);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+ color: white;
+ font-family: Helvetica;
+}
+
+.row{
+  margin-top:10%;
+}
+
+ul li{
+  display:inline;
+  float: right;
+  
+}
+.languageProperty {
+    height: 20px;
+    width: 27px;
+    border: none;
+}
+
+#startButton,
+#ImgRec {
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+#startButton:hover,
+ImgRec:hover {
+  opacity: 1;
+}

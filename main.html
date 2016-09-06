@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div align="center">
+        <div>{{'playerName' | translate}}
+          <input type="text" ng-model="name" />
+        </div>
+        <div id="emptySpace">&nbsp;</div>
+        <div>
+          <h2>{{'welcome' | translate}} <span ng-bind="name"></span></h2>
+        </div>
+        <h2>{{'invitation' | translate}}</h2>
+        <h2>{{'pressButton' | translate}}</h2>
+        <div>
+          <a href="#game">
+            <img id="startButton" src="http://mountainmovingmindset.com/images/start-button.jpg" alt="Start" height="100" width="100" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
